@@ -15,9 +15,17 @@ body {
   font-weight: 300;
   font-family: 'Public Sans', sans-serif;
   color: $grayishBlue;
+  &.no-scroll{
+    overflow: hidden;
+  }
 }
 a, a:visited, a:hover{
   text-decoration: none;
+}
+//CONTAINER
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 // FLEXBOX
 
