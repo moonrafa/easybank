@@ -15,6 +15,9 @@ body {
   font-weight: 300;
   font-family: 'Public Sans', sans-serif;
   color: $grayishBlue;
+  @include breakpoint-up(large){
+    font-size: $font-med;
+  }
   &.no-scroll{
     overflow: hidden;
   }
