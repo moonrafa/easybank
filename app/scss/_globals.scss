@@ -10,7 +10,7 @@ html{
 body {
   margin: 0;
   padding: 0;
-  font-size: $font-med;
+  font-size: $font-sm;
   line-height: 1.3;
   font-weight: 300;
   font-family: 'Public Sans', sans-serif;
@@ -19,13 +19,46 @@ body {
     overflow: hidden;
   }
 }
+h1, h2, h3 {
+  margin-top: 0;
+}
 a, a:visited, a:hover{
   text-decoration: none;
 }
 //CONTAINER
 .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;   
+  }
+
+  &--py {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  &--px {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &--pt{
+    padding-top: 2.25rem;
+  }
+  &--pr{
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 2.25rem;
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
+
 }
 // FLEXBOX
 
@@ -47,6 +80,7 @@ a, a:visited, a:hover{
 
 //BUTTONS
 button, .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   cursor: pointer;
@@ -54,6 +88,11 @@ button, .button {
   border: 0;
   color: $white;
   font-weight: 400;
+  font-size: $font-sm;
+  transition: opacity 300ms ease-in-out;
+    &:hover{
+      opacity: 0.75;
+    }
 }
 //VISIBILITY
 .hide-for-mobile {
